@@ -1,6 +1,6 @@
 ## Java Questions
 
-### 1. Print all even numbers between two numbers
+### 1. Print the sum of all even numbers between two numbers
 `Sample Input`
 ```
 1
