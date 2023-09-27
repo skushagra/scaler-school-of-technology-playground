@@ -1,1 +1,5 @@
 .vscode
+.credentail-library
+.idea
+.connection-verifier
+.gradle
