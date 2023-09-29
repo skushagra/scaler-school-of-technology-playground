@@ -59,7 +59,7 @@ public class lecture16 {
         Scanner in = new Scanner(System.in);
         String s = in.next();
         // System.out.println(countVowels(s));;
-        System.out.println(checkPassword(s));
+        System.out.print(checkPassword(s));
         
     }
 }
