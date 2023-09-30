@@ -6,11 +6,11 @@ BASE_DIR=$1
 
 if [ ! -d $BASE_DIR  ]
 then
-	echo "$BASE_DIR is not a directory"
+	echo "$BASE_DIR is not a directory or does not exist."
 	exit 1
 fi
 
-echo "$BASE_DIR exists"
+# echo "$BASE_DIR exists"
 
 # Check if archive folder exists. If not create one.
 
@@ -19,11 +19,15 @@ then
 	mkdir "$BASE_DIR/archive"
 fi
 
-echo "Archive folder available"
+# echo "Archive folder available"
 
-for file in `find $BASE_DIR -type f -size +20k`
+
+# Create a backup and save it in archive folder
+
+all_file_to_archive=$(find $BASE_DIR -type f -size +5k)
+for file in $all_file_to_archive
 do
-	echo 'Archiving $file'
-	gzip $file
-	mv $BASE_DIR/$file.gz $BASE_DIR/archive/$file.gz
+	echo "Archiving $file"
+	gzip $BASE_DIR/$file
+	mv "$BASE_DIR/$file.gz" "$BASE_DIR/archive/$file.gz"
 done
