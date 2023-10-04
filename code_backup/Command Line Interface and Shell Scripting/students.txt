@@ -1,0 +1,6 @@
+Kushagra	50
+ABC	60
+DEF	70
+SJD	36
+JDL	82
+JLS	22
