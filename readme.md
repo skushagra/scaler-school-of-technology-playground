@@ -12,3 +12,6 @@
 | Program         | File Name                                                                                                                              |
 | --------------  | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Rotate a Matrix | [rotate_matrix.java](https://github.com/skushagra/scaler-school-of-technology-playground/blob/master/code_examples/java/rotate_matrix.java) |
+
+
+`Fixed issue 1 on Github`
